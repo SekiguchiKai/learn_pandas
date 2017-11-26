@@ -32,3 +32,8 @@ print("=====replace columns and index of DataFrame. =====")
 df2.columns = ["名前", "型"]
 df2.index = ["A", "B", "C"]
 print(df2)
+
+print("=====rename columns and index of DataFrame. =====")
+df3 = df2.rename(columns={'名前': 'Name', '型': 'Type'})
+df3 = df3.rename(index={'A': '0', 'B': '1', 'C': '2'})
+print(df3)
