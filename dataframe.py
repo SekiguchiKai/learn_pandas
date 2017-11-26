@@ -25,5 +25,10 @@ print(df2)
 df2.columns = ["Name", "Type"]
 df2.index = ["0", "1", "2"]
 
-print("=====DataFrame2 with columns and index=====")
+print("=====DataFrame with columns and index=====")
+print(df2)
+
+print("=====replace columns and index of DataFrame. =====")
+df2.columns = ["名前", "型"]
+df2.index = ["A", "B", "C"]
 print(df2)
