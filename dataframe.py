@@ -1,7 +1,6 @@
 # pandasをimport
 import pandas as pd
 
-print("=====create DataFrame from dictionary=====")
 # dictionaryを作成する
 dictionary = {
     'Name': ["Python", "Go", "java"],
@@ -37,3 +36,12 @@ print("=====rename columns and index of DataFrame. =====")
 df3 = df2.rename(columns={'名前': 'Name', '型': 'Type'})
 df3 = df3.rename(index={'A': '0', 'B': '1', 'C': '2'})
 print(df3)
+
+print("=======check the data structure======")
+print("column length of df = {0}".format(len(df)))
+
+print("dimension of df = {0}".format(df.shape))
+
+print("column information of df = {0}".format(df.info))
+
+print("column information of df = {0}".format(df.describe()))
